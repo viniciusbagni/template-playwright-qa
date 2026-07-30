@@ -1,4 +1,4 @@
-# qa-b2b-tests — Template de Automação E2E
+# Template de Automação E2E
 
 Template de automação E2E com **Playwright** + **TypeScript**, seguindo **Page Object Model (POM)**.
 
@@ -54,7 +54,6 @@ Checklist pós-clone:
 ```text
 qa-<produto>-tests/
 ├── pages/                         # Page Objects + locators
-│   ├── BasePage.ts
 │   ├── LoginPage.ts
 │   ├── index.ts
 │   └── locators/
@@ -64,8 +63,7 @@ qa-<produto>-tests/
 │   └── faker_data_generator.ts
 ├── tests/
 │   ├── ui/                        # Specs de interface (GUI)
-│   │   └── login/
-│   │       └── validate_login.spec.ts
+│   │  └── validate_login.spec.ts
 │   └── api/                       # Specs de API (vazio no template)
 ├── devops/
 │   ├── dev/playwright.yml         # Pipeline ambiente dev
@@ -150,7 +148,7 @@ Separação por tipo de teste:
 
 #### `tests/ui/validate_login.spec.ts`
 
-Vazio no template. Cada time adiciona specs em `tests/api/<feature>.spec.ts`.
+Vazio no template (apenas o arquivo como exemplo, sem testes). Cada time adiciona specs em `tests/api/<feature>.spec.ts`.
 
 #### `tests/api/`
 
